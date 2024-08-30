@@ -12,7 +12,7 @@ export const autoPlayTabs = () => {
     function tabLoop2() {
         tabInterval = setInterval(function () {
             var $allImages = $('.w-tab-pane');
-            var $allTabs = $('.tabs-link');
+            var $allTabs = $('.layout219_tabs-link');
             var $currentImage = $('.w-tab-content').children('.w--tab-active:first');
             var $nextImage = $currentImage.next();
             var $current = $('.tabs-menu').children('.w--current:first');
@@ -26,9 +26,9 @@ export const autoPlayTabs = () => {
                 $nextImage.addClass('w--tab-active');
             } else {
                 $allTabs.removeClass('w--current');
-                $('.tabs-link:first').addClass('w--current');
+                $('.layout219_tabs-link:first').addClass('w--current');
                 $allTabs.attr('aria-selected', false);
-                $('.tabs-link:first').attr('aria-selected', true);
+                $('.layout219_tabs-link:first').attr('aria-selected', true);
                 $allImages.removeClass('w--tab-active');
                 $('.w-tab-pane:first').addClass('w--tab-active');
             };
@@ -43,11 +43,11 @@ export const autoPlayTabs = () => {
     | all on click...
     |---------------------------------------------
     */
-    $('.tabs-link').click(function (e) {
+    $('.layout219_tabs-link').click(function (e) {
         e.preventDefault();
         $tab = $(this).data('wTab');
         $image = $(`.w-tab-pane[data-w-tab="${$tab}"]`);
-        $('.tabs-link').removeClass('w--current');
+        $('.layout219_tabs-link').removeClass('w--current');
         $('.w-tab-pane').removeClass('w--tab-active');
         $(this).addClass('w--current');
         $($image).addClass('w--tab-active');
