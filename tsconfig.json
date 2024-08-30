@@ -6,6 +6,9 @@
     "paths": {
       "$digerati/*": [
         "src/digerati/*"
+      ],
+      "$velex/*": [
+        "src/velex/*"
       ]
     },
     "types": [
