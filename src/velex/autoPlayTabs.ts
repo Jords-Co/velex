@@ -13,9 +13,10 @@ export const autoPlayTabs = () => {
         tabInterval = setInterval(function () {
             var $allImages = $('.w-tab-pane');
             var $allTabs = $('.layout219_tabs-link');
+            console.log($allTabs);
             var $currentImage = $('.w-tab-content').children('.w--tab-active:first');
             var $nextImage = $currentImage.next();
-            var $current = $('.tabs-menu').children('.w--current:first');
+            var $current = $('.layout219_tabs-menu').children('.w--current:first');
             var $next = $current.next();
             if ($next.length) {
                 $allTabs.attr('aria-selected', false);
