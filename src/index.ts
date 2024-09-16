@@ -1,6 +1,6 @@
 import { skipToMainContent } from "$digerati/skipToMainContent";
 import { currentYear } from "$digerati/currentYear";
-import { autoPlayTabs } from "$velex/autoPlayTabs";
+import { autoPlayTabs } from "$grain/autoPlayTabs";
 
 window.Webflow || [];
 window.Webflow.push(() => {

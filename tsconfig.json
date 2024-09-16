@@ -7,8 +7,8 @@
       "$digerati/*": [
         "src/digerati/*"
       ],
-      "$velex/*": [
-        "src/velex/*"
+      "$grain/*": [
+        "src/grain/*"
       ]
     },
     "types": [
